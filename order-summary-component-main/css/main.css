@@ -1,0 +1,128 @@
+* {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  /* margin: 0;
+	padding: 0; */
+  font-family: "Red Hat Display", sans-serif;
+  /* height: 709px;
+	width: 375px; */
+  background-color: #e0e8ff;
+  position: relative;
+  width: 375px;
+  height: 709px;
+}
+
+/* .container {
+	margin: 0 auto;
+} */
+.card {
+  height: 567px;
+  width: 327px;
+  background-color: #fff;
+  margin: 71px 24px;
+  border-radius: 20px;
+}
+
+.card__img img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card__order {
+  text-align: center;
+}
+
+.card__order h2 {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 29px;
+  margin-top: 20px;
+}
+
+.card__order p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.card__order .plan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1fr);
+  grid-template-areas: 'image info link';
+  font-size: 14px;
+  line-height: 19px;
+  background-color: #fafbff;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.card__order .plan img {
+  grid-area: image;
+  margin-top: 17px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+.card__order .plan .info {
+  grid-area: info;
+  text-align: left;
+}
+
+.card__order .plan .info h4 {
+  font-weight: 900;
+  margin-bottom: -20px;
+}
+
+.card__order .plan .info p {
+  font-weight: 500;
+  grid-area: price;
+  line-height: 25px;
+}
+
+.card__order .plan a {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+  grid-area: link;
+}
+
+.card__order .plan a:hover {
+  color: #756af1;
+}
+
+.card__order .payment {
+  height: 50px;
+  width: 280px;
+  background-color: #3829e0;
+  color: #fff;
+  margin: 24px;
+  font-weight: 900;
+  padding-top: 14px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.card__order .payment:hover {
+  background-color: #756af1;
+}
+
+.card__order > a {
+  margin-bottom: 32px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #7280a7;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.card__order > a:hover {
+  color: #1f2f56;
+}
+/*# sourceMappingURL=main.css.map */

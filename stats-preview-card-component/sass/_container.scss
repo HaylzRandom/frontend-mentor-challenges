@@ -1,0 +1,116 @@
+.container {
+	margin: 0 auto;
+	width: 85%;
+	text-align: center;
+
+	@include breakpoint-up(large) {
+		max-width: 60rem;
+	}
+}
+
+.card {
+	background-color: $darkDesaturatedBlue;
+	margin-top: 5rem;
+	border-radius: 0 0 15px 15px;
+
+	@include breakpoint-up(large) {
+		display: flex;
+		flex-direction: row-reverse;
+		min-height: 40vh;
+		border-radius: 15px 0 0 15px;
+	}
+}
+
+.hero {
+	&__img {
+		width: 100%;
+		min-height: 30vh;
+		background-color: $softViolet;
+		background-image: url('./../images/image-header-mobile.jpg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-blend-mode: multiply;
+		border-radius: 15px 15px 0 0;
+
+		@include breakpoint-up(large) {
+			height: 100%;
+			background-image: url('./../images/image-header-desktop.jpg');
+			background-position: top;
+			border-radius: 0 15px 15px 0;
+		}
+	}
+
+	&__title {
+		font-size: 1.6rem;
+		color: $white;
+		line-height: 1.2;
+
+		@include breakpoint-up(large) {
+			padding-top: 2rem;
+			text-align: left;
+			font-size: 2rem;
+		}
+
+		&--highlight {
+			color: $softViolet;
+		}
+	}
+
+	&__text {
+		margin: 1.3rem auto;
+		font-size: 0.9rem;
+		color: $transparentWhite;
+		line-height: 1.5;
+
+		@include breakpoint-up(large) {
+			text-align: left;
+			width: 90%;
+			margin: 1.3rem 0 0 0;
+		}
+	}
+
+	&__stat {
+		color: $white;
+
+		&__heading {
+			color: $transparentWhite;
+			text-transform: uppercase;
+			letter-spacing: 0.05rem;
+			font-size: 0.7rem;
+			margin: 0.5rem 0 1.4rem 0;
+		}
+	}
+}
+
+.stat {
+	&__group {
+		@include breakpoint-up(large) {
+			margin-left: 3rem;
+			width: 100%;
+		}
+	}
+}
+
+.col {
+	&__two {
+		margin: 2rem auto;
+		width: 80%;
+	}
+	&__three {
+		padding-bottom: 2rem;
+		@include breakpoint-up(large) {
+			display: flex;
+			width: 85%;
+			justify-content: space-around;
+			text-align: left;
+			padding-top: 2.5rem;
+		}
+	}
+}
+
+.row {
+	@include breakpoint-up(large) {
+		width: 50%;
+	}
+}

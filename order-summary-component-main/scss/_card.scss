@@ -1,0 +1,119 @@
+.card {
+	height: 567px;
+	width: 327px;
+	background-color: #fff;
+	margin: 71px 24px;
+	//margin: 50px 5px;
+	border-radius: 20px;
+
+	&__img {
+		img {
+			width: 100%;
+			border-radius: 20px 20px 0 0;
+		}
+	}
+
+	&__order {
+		//display: grid;
+		//grid-template-columns: 1;
+		text-align: center;
+
+		h2 {
+			font-weight: 900;
+			font-size: 22px;
+			line-height: 29px;
+			margin-top: 20px;
+		}
+
+		p {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 25px;
+			//margin-top: 16px;
+			//margin-bottom: 24px;
+		}
+
+		.plan {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(1fr);
+			grid-template-areas: 'image info link';
+			font-size: 14px;
+			line-height: 19px;
+			background-color: hsla(228, 100%, 99%, 1);
+			//margin: 17px 16px 16px 16px;
+			margin-left: 16px;
+			margin-right: 16px;
+			border-radius: 12px;
+			align-items: center;
+
+			img {
+				grid-area: image;
+				//align-self: center;
+				margin-top: 17px;
+				margin-bottom: 16px;
+				margin-left: 16px;
+			}
+
+			.info {
+				grid-area: info;
+				text-align: left;
+				//align-self: left;
+				h4 {
+					font-weight: 900;
+					margin-bottom: -20px;
+				}
+
+				p {
+					font-weight: 500;
+					grid-area: price;
+					//text-align: center;
+					line-height: 25px;
+				}
+			}
+
+			a {
+				font-weight: 700;
+				font-size: 13px;
+				line-height: 17px;
+				grid-area: link;
+				//align-self: center;
+
+				&:hover {
+					color: hsla(245, 83%, 68%, 1);
+				}
+			}
+		}
+
+		.payment {
+			height: 50px;
+			width: 280px;
+			background-color: $brightBlue;
+			color: #fff;
+			//margin: auto;
+			margin: 24px;
+			font-weight: 900;
+			padding-top: 14px;
+			border-radius: 15px;
+			font-size: 15px;
+
+			&:hover {
+				background-color: hsla(245, 83%, 68%, 1);
+			}
+		}
+
+		> a {
+			margin-bottom: 32px;
+			margin-top: 20px;
+			text-decoration: none;
+			color: $desaturatedBlue;
+			font-weight: 900;
+			font-size: 15px;
+			line-height: 20px;
+
+			&:hover {
+				color: hsla(223, 47%, 23%, 1);
+			}
+		}
+	}
+}

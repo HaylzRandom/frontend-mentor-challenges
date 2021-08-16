@@ -1,0 +1,153 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: white;
+  background-color: #090b1a;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution > a {
+  color: #3e52a3;
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .container {
+    max-width: 60rem;
+  }
+}
+
+.card {
+  background-color: #1b1938;
+  margin-top: 5rem;
+  border-radius: 0 0 15px 15px;
+}
+
+@media (min-width: 64em) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 40vh;
+    border-radius: 15px 0 0 15px;
+  }
+}
+
+.hero__img {
+  width: 100%;
+  min-height: 30vh;
+  background-color: #aa5cdb;
+  background-image: url("./../images/image-header-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  border-radius: 15px 15px 0 0;
+}
+
+@media (min-width: 64em) {
+  .hero__img {
+    height: 100%;
+    background-image: url("./../images/image-header-desktop.jpg");
+    background-position: top;
+    border-radius: 0 15px 15px 0;
+  }
+}
+
+.hero__title {
+  font-size: 1.6rem;
+  color: white;
+  line-height: 1.2;
+}
+
+@media (min-width: 64em) {
+  .hero__title {
+    padding-top: 2rem;
+    text-align: left;
+    font-size: 2rem;
+  }
+}
+
+.hero__title--highlight {
+  color: #aa5cdb;
+}
+
+.hero__text {
+  margin: 1.3rem auto;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+}
+
+@media (min-width: 64em) {
+  .hero__text {
+    text-align: left;
+    width: 90%;
+    margin: 1.3rem 0 0 0;
+  }
+}
+
+.hero__stat {
+  color: white;
+}
+
+.hero__stat__heading {
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 0.7rem;
+  margin: 0.5rem 0 1.4rem 0;
+}
+
+@media (min-width: 64em) {
+  .stat__group {
+    margin-left: 3rem;
+    width: 100%;
+  }
+}
+
+.col__two {
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.col__three {
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 64em) {
+  .col__three {
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+    text-align: left;
+    padding-top: 2.5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .row {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
