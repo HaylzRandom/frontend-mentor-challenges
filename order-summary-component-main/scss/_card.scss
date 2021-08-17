@@ -3,8 +3,12 @@
 	width: 327px;
 	background-color: #fff;
 	margin: 71px 24px;
-	//margin: 50px 5px;
 	border-radius: 20px;
+	margin: 71px 24px;
+
+	@include breakpoint-up(medium) {
+		margin: 10% auto;
+	}
 
 	&__img {
 		img {
@@ -14,10 +18,9 @@
 	}
 
 	&__order {
-		//display: grid;
-		//grid-template-columns: 1;
 		text-align: center;
 
+		// Order Summary
 		h2 {
 			font-weight: 900;
 			font-size: 22px;
@@ -29,10 +32,9 @@
 			font-weight: 500;
 			font-size: 16px;
 			line-height: 25px;
-			//margin-top: 16px;
-			//margin-bottom: 24px;
 		}
 
+		// Plan details
 		.plan {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
@@ -41,7 +43,6 @@
 			font-size: 14px;
 			line-height: 19px;
 			background-color: hsla(228, 100%, 99%, 1);
-			//margin: 17px 16px 16px 16px;
 			margin-left: 16px;
 			margin-right: 16px;
 			border-radius: 12px;
@@ -49,7 +50,6 @@
 
 			img {
 				grid-area: image;
-				//align-self: center;
 				margin-top: 17px;
 				margin-bottom: 16px;
 				margin-left: 16px;
@@ -58,7 +58,6 @@
 			.info {
 				grid-area: info;
 				text-align: left;
-				//align-self: left;
 				h4 {
 					font-weight: 900;
 					margin-bottom: -20px;
@@ -67,7 +66,6 @@
 				p {
 					font-weight: 500;
 					grid-area: price;
-					//text-align: center;
 					line-height: 25px;
 				}
 			}
@@ -77,7 +75,6 @@
 				font-size: 13px;
 				line-height: 17px;
 				grid-area: link;
-				//align-self: center;
 
 				&:hover {
 					color: hsla(245, 83%, 68%, 1);
@@ -90,7 +87,6 @@
 			width: 280px;
 			background-color: $brightBlue;
 			color: #fff;
-			//margin: auto;
 			margin: 24px;
 			font-weight: 900;
 			padding-top: 14px;
@@ -99,6 +95,7 @@
 
 			&:hover {
 				background-color: hsla(245, 83%, 68%, 1);
+				box-shadow: 0 3px 10px $darkBlue;
 			}
 		}
 

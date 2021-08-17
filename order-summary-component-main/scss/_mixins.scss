@@ -3,6 +3,8 @@ $breakpoints-up: (
 	'large': '64em',
 );
 
+// Media Queries
+
 @mixin breakpoint-up($size) {
 	@media (min-width: map-get($breakpoints-up, $size)) {
 		@content;
