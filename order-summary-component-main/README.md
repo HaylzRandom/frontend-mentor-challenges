@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/HaylzRandom/frontend-mentor-challenges/tree/main/order-summary-component-main)
-- Live Site URL: (TBC)
+- Live Site URL: (https://haylzrandom.github.io/frontend-mentor-challenges/order-summary-component-main/index.html)
 
 ## My process
 
