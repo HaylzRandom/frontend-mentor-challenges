@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.logo {
+		margin: 20px auto;
+	}
+
+	.hero-section {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 360px;
+
+		.hero-info {
+			padding: 10px;
+			margin: 15px;
+			text-align: center;
+
+			h1 {
+				padding: 15px;
+			}
+
+			p {
+				padding: 15px;
+			}
+
+			.info {
+				background-color: rebeccapurple;
+				border-radius: 15px;
+				padding: 20px;
+				border: none;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.info-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	.img-container {
+		display: flex;
+		justify-content: space-evenly;
+        
+
+		img {
+			width: 240px;
+			height: 250px;
+            margin: 20px;
+            border-radius: 15px;
+		}
+	}
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        padding: 15px;
+        margin: 25px;
+
+        h3 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 10px;
+        }
+
+        p {
+            margin: 10px;
+        }
+    }
+}
+
+.download {
+	background-color: rebeccapurple;
+	border-radius: 15px;
+	padding: 20px;
+	border: none;
+	color: #fff;
+
+	.version {
+		color: salmon;
+	}
+}
+
+.splitter {
+	.circle {
+		position: absolute;
+		/* 		left: 0%;
+		right: 0%;
+		top: 0%;
+		bottom: 0%; */
+
+		background: #fafafa;
+		border: 1px solid rgba(135, 135, 157, 0.25);
+		border-radius: 29px;
+
+		.line {
+			position: absolute;
+			left: 48.21%;
+			right: 50%;
+			top: 0%;
+			bottom: 40%;
+		}
+
+		.number {
+			position: absolute;
+			width: 56px;
+			height: 56px;
+			left: 0px;
+			top: 84px;
+		}
+	}
+}
